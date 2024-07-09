@@ -1,0 +1,20 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ article.title }}</title>
+</head>
+<body>
+<h1>{{ article.title }}</h1>
+<p>{{ article.content }}</p>
+<p><b>Author:</b> {{ article.author }}</p>
+<p><b>Date:</b> {{ article.date }}</p>
+<a href="{{ url_for('edit_article', id=article.id) }}">Edit Article</a>
+<a href="{{ url_for('delete_article', id=article.id) }}">Delete Article</a>
+</body>
+</html>
+
+
